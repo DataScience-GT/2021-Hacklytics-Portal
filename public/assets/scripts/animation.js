@@ -76,9 +76,9 @@ function schedule_populate() {
 
 function friday_toggle() {
     // Highlight friday button
-    document.getElementById("friday_button").style.boxShadow = "0px 0px 10px #20A39E";
-    document.getElementById("saturday_button").style.boxShadow = "0px 0px 0px #20A39E";
-    document.getElementById("sunday_button").style.boxShadow = "0px 0px 0px #20A39E";
+    document.getElementById("friday_button").style.boxShadow = "0px 0px 10px #ECAE58";
+    document.getElementById("saturday_button").style.boxShadow = "0px 0px 0px #ECAE58";
+    document.getElementById("sunday_button").style.boxShadow = "0px 0px 0px #ECAE58";
 
     // load friday schedule
     const friday_schedule = document.getElementById("friday_schedule");
@@ -91,9 +91,9 @@ function friday_toggle() {
 
 function saturday_toggle() {
     // Highlight saturday button
-    document.getElementById("friday_button").style.boxShadow = "0px 0px 0px #20A39E";
-    document.getElementById("saturday_button").style.boxShadow = "0px 0px 10px #20A39E";
-    document.getElementById("sunday_button").style.boxShadow = "0px 0px 0px #20A39E";
+    document.getElementById("friday_button").style.boxShadow = "0px 0px 0px #ECAE58";
+    document.getElementById("saturday_button").style.boxShadow = "0px 0px 10px #ECAE58";
+    document.getElementById("sunday_button").style.boxShadow = "0px 0px 0px #ECAE58";
 
     // load saturday schedule
     const friday_schedule = document.getElementById("friday_schedule");
@@ -106,9 +106,9 @@ function saturday_toggle() {
 
 function sunday_toggle() {
     // Highlight sunday button
-    document.getElementById("friday_button").style.boxShadow = "0px 0px 0px #20A39E";
-    document.getElementById("saturday_button").style.boxShadow = "0px 0px 0px #20A39E";
-    document.getElementById("sunday_button").style.boxShadow = "0px 0px 10px #20A39E";
+    document.getElementById("friday_button").style.boxShadow = "0px 0px 0px #ECAE58";
+    document.getElementById("saturday_button").style.boxShadow = "0px 0px 0px #ECAE58";
+    document.getElementById("sunday_button").style.boxShadow = "0px 0px 10px #ECAE58";
 
     // load sunday schedule
     const friday_schedule = document.getElementById("friday_schedule");

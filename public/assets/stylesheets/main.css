@@ -535,7 +535,7 @@ img.a:hover {
 
 .schedule-nav > div {
     flex: 0 1 auto;
-    border: 1px solid #20A39E;
+    border: 1px solid #ECAE58;
     width: 200px;
     text-align: center;
     border-radius: 25px;
@@ -552,15 +552,15 @@ img.a:hover {
 }
 
 #friday_button {
-    box-shadow: 0px 0px 10px #20A39E;
+    box-shadow: 0px 0px 10px #ECAE58;
 }
 
 #saturday_button {
-    box-shadow: 0px 0px 0px #20A39E;
+    box-shadow: 0px 0px 0px #ECAE58;
 }
 
 #sunday_button {
-    box-shadow: 0px 0px 0px #20A39E;
+    box-shadow: 0px 0px 0px #ECAE58;
 }
 
 .friday_schedule, .saturday_schedule, .sunday_schedule {
@@ -588,6 +588,75 @@ table td {
     white-space: nowrap;
 }
 
+.timezone-notice {
+    font-style: italic;
+    font-size: 0.8em;
+    font-weight: 400;
+    line-height: 1.2em;
+    font-family: 'Open Sans';
+}
+
+.challenges {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.challenges > div {
+    flex: 0 1 auto;
+    max-width: 38%;
+    height: 20em;
+    border: 1px solid #20A39e;
+    margin: 1em 1em;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px #20A39e;
+    /* Content layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1em;
+    /* Font layout */
+    text-transform: regular;
+    font-size: 1.25em;
+    font-weight: 600;
+    line-height: 1.35em;
+    font-family: 'Red Hat Text';
+    text-align: center;
+}
+
+.icon {
+    width: 3.0em;
+}
+
+.sponsors > div {
+    padding: 1em 0;
+}
+
+.anthem-icon, .citadel-icon {
+    width: 10.0em;
+}
+
+.scheller-icon, .createX-icon {
+    height: 2.5em;
+}
+
+.challenge-description {
+    text-transform: regular;
+    font-size: 1.0em;
+    font-weight: 400;
+    line-height: 1.2em;
+    font-family: 'Open Sans';
+}
+
+.sponsor-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 
 @media only screen and (max-device-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
