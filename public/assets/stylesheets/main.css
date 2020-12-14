@@ -514,6 +514,18 @@ img.a:hover {
     color: #20A39e;
 }
 
+.Hacklytics {
+    display: flex;
+    flex-direction: row;
+    margin: 3% 0;
+}
+
+.DSGT {
+    display: flex;
+    flex-direction: row;
+    margin: 3% 0;
+}
+
 .schedule-nav {
     display: flex;
     flex-direction: row;
