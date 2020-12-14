@@ -514,6 +514,69 @@ img.a:hover {
     color: #20A39e;
 }
 
+.schedule-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.schedule-nav > div {
+    flex: 0 1 auto;
+    border: 1px solid #20A39E;
+    width: 200px;
+    text-align: center;
+    border-radius: 25px;
+    padding: 18px 0;
+    text-transform: regular;
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 1.35em;
+    font-family: 'Red Hat Text';
+}
+
+.schedule-nav > div:hover {
+    cursor: pointer;
+}
+
+#friday_button {
+    box-shadow: 0px 0px 10px #20A39E;
+}
+
+#saturday_button {
+    box-shadow: 0px 0px 0px #20A39E;
+}
+
+#sunday_button {
+    box-shadow: 0px 0px 0px #20A39E;
+}
+
+.friday_schedule, .saturday_schedule, .sunday_schedule {
+    margin: 50px 0px;
+    font-size: 1.3em;
+    font-weight: 400;
+    line-height: 1.35em;
+    font-family: 'Open Sans';   
+}
+
+.friday_schedule {
+    display: block;
+}
+
+.saturday_schedule {
+    display: None;
+}
+
+.sunday_schedule {
+    display: None;
+}
+
+table td {
+    padding: 0.5em 5em 0.5em 0;
+    white-space: nowrap;
+}
+
+
 @media only screen and (max-device-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
       background-attachment: scroll;

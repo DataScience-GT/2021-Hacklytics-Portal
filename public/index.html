@@ -16,6 +16,7 @@
     <script src="https://kit.fontawesome.com/0af4e04c21.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/scripts/waitlist.js"></script>
+    <script src="assets/scripts/animation.js"></script>
 </head>
 
 <body onload="mobileCheck()">
@@ -24,8 +25,10 @@
     <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=black" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-black.svg" alt="Major League Hacking 2021 Hackathon Season" style="width:100%"></a>
     <div class="topnav" id="myTopnav">
         <a href="" class="logo"><img class="navb" src="assets/images/hacklytics/square-logo.png" width="62" height="62"></a>
-        <a href="#About Hacklytics" class="text">About Hacklytics</a>
-        <a href="#About Us" class="text">About Us</a>
+        <a href="#About Hacklytics" class="text">About</a>
+        <!-- <a href="#About Us" class="text">About Us</a> -->
+        <a href="#Schedule" class = "text">Schedule</a>
+        <a href="#Challenges" class="text">Challenges</a>
         <a href="#Sponsors" class="text">Sponsors</a>
         <a href="#FAQ" class="text">FAQ</a>
         <a href="#Get in Touch!" class="text">Get in Touch</a>
@@ -113,6 +116,49 @@
         <!-- </div> -->
     </div>
 
+    <div id="Schedule" class="container" style="position:relative">
+        <div class="bgimg-2"> <!-- To do: find another image-->
+        </div>
+        <div class="caption">
+            <span class="border3">Schedule</span>
+        </div>
+    </div>
+    <div class="section1">
+        <div class="schedule-nav">
+            <div onclick="friday_toggle()" id="friday_button">
+                Friday
+            </div>
+            <div onclick="saturday_toggle()" id="saturday_button">
+                Saturday
+            </div>
+            <div onclick="sunday_toggle()" id="sunday_button">
+                Sunday
+            </div>
+        </div>
+        <div class="friday_schedule" id="friday_schedule">
+            <table id="friday_schedule_table"></table>
+        </div>
+        <div class="saturday_schedule" id="saturday_schedule">
+            <table id="saturday_schedule_table"></table>
+        </div>
+        <div class="sunday_schedule" id="sunday_schedule">
+            <table id="sunday_schedule_table"></table>
+        </div>
+    </div>
+
+    <div id="Challenges" class="container" style="position:relative">
+        <div class="bgimg-2"> <!-- Find another image-->
+        </div>
+        <div class="caption">
+            <span class="border2">Challenges</span>
+        </div>
+    </div>
+    <div class="section3">
+        <p>
+            Coming soon!
+        </p>
+    </div>
+
     <div id="Sponsors" class="container" style="position:relative">
         <div class="bgimg-3"></div>
         <div class="caption">
@@ -166,4 +212,8 @@
             <li>&copy; <a href="https://datasciencegt.org/">Data Science at Georgia Tech 2020.</a> All rights reserved.</li>
         </ul>
     </div>
+    <script>
+        // load schedule
+        schedule_populate();
+    </script>
   </body>
