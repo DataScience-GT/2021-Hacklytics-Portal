@@ -16,7 +16,8 @@
     <script src="https://kit.fontawesome.com/0af4e04c21.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/scripts/waitlist.js"></script>
-    <script src="assets/scripts/animation.js"></script>
+    <script src="assets/scripts/schedule.js"></script>
+    <script src="assets/scripts/dataset.js"></script>
 </head>
 
 <body onload="mobileCheck()">
@@ -29,8 +30,9 @@
         <!-- <a href="#About Us" class="text">About Us</a> -->
         <a href="#Schedule" class = "text">Schedule</a>
         <a href="#Challenges" class="text">Challenges</a>
+        <a href="#Data-sets" class="text">Data Sets</a>
         <a href="#Sponsors" class="text">Sponsors</a>
-        <a href="#FAQ" class="text">FAQ</a>
+        <!-- <a href="#FAQ" class="text">FAQ</a> -->
         <a href="#Get in Touch!" class="text">Get in Touch</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
@@ -72,27 +74,6 @@
             -->
       </div>
     </div>
-
-    <!-- <div id="About Us" class="container" style="position:relative">
-        <div class="bgimg-2">
-        </div>
-        <div class="caption">
-            <span class="border2">About Us</span>
-        </div>
-    </div>
-    <div class="section3">
-        <div> <a href="https://datasciencegt.org/" target="_blank">
-            <img class="a" src="assets/images/hacklytics/icon.png"/></a>
-        </div>
-        <p>
-            We are Data Science at Georgia Tech, Georgia Tech's largest community of student data scientists. </br></br>
-            Our vision is to foster passion in data science and create a positive
-            impact on the community. This passion inspired Hacklytics, our data-science
-            themed hackathon.</br></br>
-            We encourage both experienced students and beginners to come together
-            and build something new and impactful, while having fun!
-        </p>
-    </div> -->
 
     <div id="About" class="container" style="position: relative;">
         <div class="bgimg-1">
@@ -219,15 +200,29 @@
         </div>
     </div>
 
+    <div id="Data-sets" class="container" style="position:relative">
+        <div class="bgimg-4"></div>
+        <div class="caption">
+            <span class="border1">Data Sets</span>
+        </div>
+    </div>
+    <div class="section2">
+        <table id="dataset-table">
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </table>
+    </div>
+
     <div id="Sponsors" class="container" style="position:relative">
         <div class="bgimg-3"></div>
         <div class="caption">
             <span class="border3">Sponsors</span>
         </div>
     </div>
-
     <div class="section1">
-        <!-- <h1>Sponsors</h1> -->
         <div class="sponsor-list">
             <a href="https://www.antheminc.com/index.htm" target="_blank"><img class="sponsor2" src="assets/images/sponsors/anthem.png"></a>
             <a href="https://www.citadel.com/" target="_blank"><img class="sponsor2" src="assets/images/sponsors/citadel.png"></a>
@@ -239,16 +234,15 @@
         </p>
     </div>
 
-    <div id="FAQ" class="container" style="position:relative">
+    <!-- <div id="FAQ" class="container" style="position:relative">
         <div class="bgimg-4"></div>
         <div class="caption">
             <span class="border1">FAQ</span>
         </div>
     </div>
     <div class="section2">
-        <!--<h1>FAQ</h1> -->
         <p>Coming soon!</p>
-    </div>
+    </div> -->
 
     <div id="Get in Touch!" class="container" style="position: relative;">
         <div class="bgimg-5"></div>
@@ -257,7 +251,6 @@
         </div>
     </div>
     <div class="section3">
-        <!-- <h1>Get In Touch!</h1> -->
         <p>We're looking for mentors and volunteers to support our aspiring data scientists for a weekend of fun filled learning and hacking. 
             Formal applications for mentors and volunteers are coming soon, so stay tuned! </br></br>
             In the meantime, please reach out to us via email at <a href="mailto:hello@hacklytics.io/">hello@hacklytics.io</a> if you have
@@ -279,5 +272,7 @@
     <script>
         // load schedule
         schedule_populate();
+        // load dataset
+        dataset_populate();
     </script>
   </body>

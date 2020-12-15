@@ -658,6 +658,40 @@ table td {
     justify-content: space-evenly;
 }
 
+#dataset-table {
+    background-color: #ECE9E1;
+    color: #C74138;
+    border-radius: 20px;
+    margin-bottom: 2em;
+}
+
+#dataset-table th {
+    border: 1px solid #C74138;
+    font-family: "Red Hat Text";
+    font-weight: 600;
+    padding: 1em 1em;
+    font-size: 1.3em;
+    line-height: 1.35em;
+}
+
+#dataset-table td {
+    border: 1px solid #C74138;
+    padding: 0.5em 1em;
+    font-family: "Open Sans";
+    font-size: 1.0em;
+    line-height: 1.5em;
+    height: 4em;
+    vertical-align: middle;
+}
+
+#dataset-table th:nth-child(3), #dataset-table td:nth-child(3) {
+    white-space: pre-wrap;
+}
+
+#dataset-table tr:hover {
+    background-color: #cebab9;
+}
+
 @media only screen and (max-device-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
       background-attachment: scroll;
