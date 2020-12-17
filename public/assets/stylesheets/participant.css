@@ -133,35 +133,40 @@ table td {
     font-family: 'Open Sans';
 }
 
-.sponsor-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
 #dataset-table {
+    border-collapse: collapse;
     background-color: #ECE9E1;
-    color: #C74138;
-    border-radius: 20px;
-    margin-bottom: 2em;
+    color: rgb(72, 52, 52);
+    margin: 2em 0;
+    font-size: 0.9em;
+    font-family: "Open Sans";
+    line-height: 1.35em;
+    box-shadow: 0 0 20px #C74138;
 }
 
 #dataset-table th {
-    border: 1px solid #C74138;
-    font-family: "Red Hat Text";
+    background-color: #C74138;
+    color: #ECE9E1;
+    text-align: left;
     font-weight: 600;
     padding: 1em 1em;
     font-size: 1.3em;
-    line-height: 1.35em;
+}
+
+#dataset-table tr {
+    border-bottom: 0.1em solid #C74138;
+}
+
+#dataset-table tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+#dataset-table tr:last-of-type {
+    border-bottom: 0.3em solid #C74138;
 }
 
 #dataset-table td {
-    border: 1px solid #C74138;
     padding: 0.5em 1em;
-    font-family: "Open Sans";
-    font-size: 1.0em;
-    line-height: 1.5em;
     height: 4em;
     vertical-align: middle;
 }
@@ -171,5 +176,5 @@ table td {
 }
 
 #dataset-table tr:hover {
-    background-color: #cebab9;
+    color: #C74138;
 }
